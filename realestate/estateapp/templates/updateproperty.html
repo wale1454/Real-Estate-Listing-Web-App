@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1> update page here</h1>
+    <div>
+
+        <div class="t" > <a href="/"> Home page </a> </div>
+        <br>
+        <br>
+
+
+
+        <form method="post">
+            {% csrf_token %}
+
+
+            <div>        {{ form.as_p }} </div>
+
+            <button type="submit">go </button>
+
+
+        </form>
+    </div>
+
+
+
+    <style>
+
+        *{
+            margin: 2px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .t{
+            background-color: rgb(213, 213, 255);
+            color: white   ;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .t a{
+            color: rgb(0, 8, 158)   ;
+            /* padding: 50px; */
+
+        }
+
+
+    </style>
+
+
+    
+</body>
+</html>
