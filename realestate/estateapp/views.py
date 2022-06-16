@@ -8,10 +8,7 @@ from estateapp.models import Property
 def Homepage(request):
 
     Items = Property.objects.all()
-    # otbop = Property.objects.get(id=18)
-    data = {"Props": Items
-            # "sq": otbop
-            }
+    data = {"Props": Items }
     return render(request, 'index.html', data )
 
 
@@ -48,10 +45,6 @@ def DeleteProp(request, ind):
     ToDelete = Property.objects.filter(id = ind)[0]
     print(ToDelete, "deleted fam")
     ToDelete.delete()
-
-    # da = {}
-
-    # return render(request, 'index.html' , da )
 
     return HttpResponseRedirect('/' )
 
