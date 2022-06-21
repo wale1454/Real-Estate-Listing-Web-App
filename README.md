@@ -1,15 +1,15 @@
 # Real-Estate-Listing-Web-App
 
-Built with Python, Django, HTML/CSS
+Built with Python, Django, HTML/CSS.
 
-You can create, view, edit and delete property listings.
+You can create a new listing, upload an image of the property, view available listings,  edit and delete property listings.
 
 
 
 # Usage
 
 
-You need to install Django and also Pillow for handling images
+You need to install Django and also Pillow for handling images.
 
 <pre><code> pip install django 
  pip install Pillow 
